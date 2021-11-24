@@ -58,4 +58,10 @@ export class ContentListComponent implements OnInit {
     this.musicList = [...this.musicList];
     // this.getContent();
   }
+
+  clickEvent() {
+
+  }
+
+
 }

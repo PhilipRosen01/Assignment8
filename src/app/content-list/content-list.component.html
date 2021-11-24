@@ -9,11 +9,14 @@
     {{ message }}
 </div>
 
+
+
+
 <app-content-card appHoverCard [borderVisible]="isLast || isFirst"
     *ngFor="let song of musicList; last as isLast; first as isFirst" [class.is-last]="isLast" [song]="song"
     [class.highlight-me]="checkTitle.value === song.title">
 </app-content-card>
-<!-- 
+<!--
 <app-content-card appHoverCard [borderVisible]="isLast || isFirst"
     *ngFor="let song of musicList | typeFilter: 'metal'; last as isLast; first as isFirst" [class.is-last]="isLast"
     [song]="song" [class.highlight-me]="checkTitle.value === song.title" class="metal">

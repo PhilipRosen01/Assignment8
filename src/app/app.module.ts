@@ -13,6 +13,12 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { CreateComponent } from './create/create.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// @ts-ignore
+// import {MatButtonModule} from '@angular/material';
+// import {MatInputModule} from '@angular/material/input';
+// import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -34,8 +40,12 @@ import { FormsModule } from '@angular/forms';
       delay: 2000
     }),
     FormsModule
+    // MatSliderModule,
+    // MatButtonModule,
+    // MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
